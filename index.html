@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2563EB" />
+    <meta
+      name="description"
+      content="Sanwo - Bridging the gap between remote workers and their clients with seamless payment solutions. Generate invoices, confirm payments with QR codes, and manage your USD wallet - all in one place."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sanwo.com/" />
+    <meta
+      property="og:title"
+      content="Sanwo - Seamless Payments for Remote Workers"
+    />
+    <meta
+      property="og:description"
+      content="Bridge the gap between remote workers and their clients with secure, efficient payment solutions."
+    />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://sanwo.com/" />
+    <meta
+      property="twitter:title"
+      content="Sanwo - Seamless Payments for Remote Workers"
+    />
+    <meta
+      property="twitter:description"
+      content="Bridge the gap between remote workers and their clients with secure, efficient payment solutions."
+    />
+    <meta property="twitter:image" content="/og-image.png" />
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Manifest and icons -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+    <title>Sanwo - Seamless Payments for Remote Workers</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Prevent flash of unstyled content -->
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </body>
+</html>
